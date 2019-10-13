@@ -60,6 +60,9 @@ class Renderer{
       var projectNavLi = document.createElement('li');
       var anchor = document.createElement('a');
       anchor.setAttribute('href', '#')
+      anchor.onclick = (e) =>{
+        e.preventDefault()
+      }
 
       projectNavLi.classList.add(key);
       if(i === this.currentIndex){
